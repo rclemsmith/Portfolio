@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-responsive-complete",
+  "version": "1.0.0",
+  "description": "A clean and nice web portfolio for designer or developer. That includes almost everything you want to show. At first, your name, links to social networks and a great image. Then the About section displays more information about you. Then the list of Skills it offers. It also has a section where it shows some recent work. And at the bottom it has a form, and at the end with a footer.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bedimcode/portfolio-responsive-complete.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bedimcode/portfolio-responsive-complete/issues"
+  },
+  "homepage": "https://github.com/bedimcode/portfolio-responsive-complete#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
