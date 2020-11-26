@@ -1,19 +1,20 @@
 name: Deploy to Alibaba Cloud
 on: [push]
-jobs:
 
+jobs:
   build:
-    name: Build
+
     runs-on: ubuntu-latest
+
     steps:
-    - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@master
+    - name: Connect and Deploy
+      uses: fifsky/ssh-action@master
       with:
+        command: |
+            cd Portfolio/
+            ls 
+            git pull
+            pm2 start app
         host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
-        script: cd Portfolio/ |
-                ls |
-                git pull |
-                pm2 restart app
+        user: root
+        key: ${{ secrets.SERVER_SSH_KEY}}
